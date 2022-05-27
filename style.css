@@ -1,0 +1,112 @@
+/* FONTES DO PROJETO */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;700;800;900&display=swap');
+/* 
+font-family: 'Martel Sans', sans-serif;
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #F7F6FC;
+    overflow: hidden;
+}
+body
+{
+    background-color: #5F6E88;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bi-list
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 5;
+}
+section
+{
+    width: 1300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+div#sec_text
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 3;
+    line-height: 1.2;
+}
+#sec_text p:nth-child(1),:nth-child(2)
+{
+    font-size: 18px;
+    font-family: 'Martel Sans', sans-serif;
+}
+#sec_text p:nth-child(3)
+{
+    margin-top: 20px;
+}
+#sec_text h1
+{
+    font-size: 48px;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 900;
+}
+div#sec_img
+{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    display: flex;
+    justify-content: end;
+}
+div#sec_img img
+{
+    max-width: 900px;
+    opacity: 30%;
+}
+
+footer
+{
+    position: absolute;
+    right: 0;
+}
+footer div
+{
+    display: flex;
+    flex-direction: column;
+}
+footer div .bi
+{
+    padding: 0 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    section {
+        width: 1100px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    section {
+        width: 900px;
+    }
+}
