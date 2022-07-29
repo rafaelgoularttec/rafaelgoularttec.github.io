@@ -1,39 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Rafael Goulart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>RG Soluções</title>
 </head>
 <body>
     <header>
-
+        <div class="limite">
+            <div id="logo">
+                <img src="./imgs/logo-sem-fundo.png" alt="LOGO RG">
+            </div>
+            <a href="https://wa.me/47991770477" id="menu">
+                <i class="bi bi-whatsapp"></i>
+                <p>Contato</p>
+            </a>
+        </div>
     </header>
     <main>
-        <section>
-            <div id="btn_menu"><i class="bi bi-list"></i></div>
-            <div id="sec_text">
-                <p>Seja bem-vindo ao meu portfolio pessoal.</p>
-                <h1>COMEÇAMOS AQUI!</h1>
-                <p>
-                Meu nome é Rafael Goulart, sou amante de tecnologia e trabalho na área desde 2014. <br>
-                Tenho um canal no youtube onde compartilho meu conhecimento, mas também gosto <br> de relaxar jogando em live com amigos. <br>
-                <br>
-                Tudo isso você encontra aqui. Espero que gostem!
-                </p>
+        <div id="container-servicos">
+            <div class="box-servicos" id="automacao">
+                <h2>Automação</h2>
+                <div id="fundo-automacao"></div>
             </div>
-            <div id="sec_img">
-                <img src="rocket.png" alt="Foguete">
+            <div class="box-servicos" id="seguranca">
+                <h2>Sistemas de segurança</h2>
+                <div id="fundo-seguranca"></div>
+            </div>
+            <div class="box-servicos" id="redes">
+                <h2>Redes</h2>
+                <div id="fundo-redes"></div>
+            </div>
+            <div class="box-servicos" id="informatica">
+                <h2>Informática geral</h2>
+                <div id="fundo-informatica"></div>
+            </div>
+        </div>
+        <div id="mensagem-servico">
+            <h1><span>❝</span>Mais conforto e segurança com monitoramento na palma da mão<span>❞</span></h1>
+        </div>
+        <section>
+            <h2>Nossos serviços</h2>
+            <div id="servicos-top">
+                <div id="suporte" class="servicos">
+                    <i class="bi bi-gear"></i>
+                    <h2>Suporte</h2>
+                    <p>
+                        Suporte para equipamentos de informatica e softwares:
+                        - Instalação e manutenção.
+                    </p>
+                </div>
+                <div id="Infra" class="servicos">
+                    <i class="bi bi-display"></i>
+                    <h2>Infraestrutura</h2>
+                    <p>
+                        Venda e instalação de computadores, notebooks, impressoras, periféricos, central telefônica, câmeras de segurança e acessórios em geral.
+                    </p>
+                </div>
+                <div id="sistema-seguranca" class="servicos">
+                    <i class="bi bi-shield-check"></i>
+                    <h2>Sistemas de segurança</h2>
+                    <p>
+                        Instalação de câmeras de segurança e sistema de vigilância.
+                    </p>
+                </div>
+            </div>
+            <div id="servicos-bottom">
+                <div id="rede-servidor" class="servicos">
+                    <i class="bi bi-cloudy"></i>
+                    <h2>Rede e Servidor</h2>
+                    <p>
+                        Instalação de redes de computadores, servidores Windows e Linux. Controle de acesso à internet.
+                    </p>
+                </div>
+                <div id="telefonia" class="servicos">
+                    <i class="bi bi-telephone"></i>
+                    <h2>Telefonia</h2>
+                    <p>
+                        Projeto, instalação e suporte à sistemas de telefonia analógicos e digitais (centrais telefônicas).
+                    </p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-linkedin"></i>
+        <div id="locais-atendimento">
+            <h3><i class="bi bi-pin-map-fill"></i>Locais de atendimento</h3>
+            <ul>
+                <li>Balneário Camboriú - Camboriú - Itajaí - Itapema - Penha - Barra Velha - Tijucas</li>
+                <li class="text-destaque">Demais localizações apenas serviços por acesso remoto</li>
+            </ul>
         </div>
     </footer>
 </body>

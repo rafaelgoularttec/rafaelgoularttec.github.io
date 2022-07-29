@@ -1,112 +1,295 @@
-/* FONTES DO PROJETO */
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;700;800;900&display=swap');
-/* 
-font-family: 'Martel Sans', sans-serif;
-*/
 *
 {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
     box-sizing: border-box;
-    color: #F7F6FC;
-    overflow: hidden;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 body
 {
-    background-color: #5F6E88;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #f2f7fc;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+header
+{
+    width: 100vw;
+    max-height: 120px;
+    min-height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d343e;
+}
+.limite
+{
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo img
+{
+    width: 80px;
+}
+#menu
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color:rgb(64, 252, 174);
+    transition: all .3s;
+    border-radius: 5px;
+}
+#menu:hover
+{
+    background-color:rgba(80, 248, 178, 0.678);
+}
+#menu i
+{
+    display: flex;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    /* text-shadow: 2px 2px 5px rgba(70, 68, 68, 0.473) */
+}
+#menu p
+{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+main
+{
+    width: 1000px;
+}
+#container-servicos
+{
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
 }
-.bi-list
+.box-servicos
+{
+    width: 250px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+.box-servicos::after
+{
+    content: '';
+    width: 95%;
+    height: 5px;
+    background-color: #05e2ff;
+    position: absolute;
+    bottom: -2px;
+    z-index: 99999;
+}
+#automacao,
+#seguranca,
+#redes,
+#informatica
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+#automacao h2,
+#seguranca h2,
+#redes h2,
+#informatica h2
 {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0px;
-    left: 0px;
-    font-size: 40px;
-    cursor: pointer;
-    z-index: 5;
+    z-index: 999;
+    color: white;
+    font-size: 38px
+}
+#automacao
+{
+    background-image: url(./imgs/automacao.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#seguranca
+{
+    background-image: url(./imgs/seguranca.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#redes
+{
+    background-image: url(./imgs/redes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#informatica
+{
+    background-image: url(./imgs/informatica.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#fundo-automacao,
+#fundo-seguranca,
+#fundo-redes,
+#fundo-informatica
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 990;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    transition: all .5s;
+}
+#fundo-automacao,
+#fundo-informatica,
+#fundo-seguranca,
+#fundo-redes
+{
+    background-color: #000000de;
+}
+#fundo-automacao:hover,
+#fundo-informatica:hover,
+#fundo-seguranca:hover,
+#fundo-redes:hover
+{
+    background-color: #00000081;
+}
+#mensagem-servico
+{
+   width: 1000px;
+   height: 190px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+#mensagem-servico h1
+{
+    position: relative;
+    width: 800px;
+    font-size: 44px;
+    color: #5763ac;
+    /* text-shadow: 2px 2px 10px rgba(51, 51, 51, 0.329); */
+    font-style: italic;
+}
+#mensagem-servico h1 span:nth-child(1)
+{
+    position: absolute;
+    top: 0;
+    left: 90px;
+}
+#mensagem-servico h1 span:nth-child(2)
+{
+    position: absolute;
+    bottom: 20px;
+    right: 70px;
+}
+#mensagem-servico h1 span
+{
+    font-size: 24px;
 }
 section
 {
-    width: 1300px;
-    height: 100vh;
+    width: 1000px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
-
 }
-div#sec_text
+section > h2
 {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    z-index: 3;
-    line-height: 1.2;
+    color: #5763ac;
+    font-size: 32px;
+    font-family: cursive;
 }
-#sec_text p:nth-child(1),:nth-child(2)
+#servicos-top,
+#servicos-bottom
 {
-    font-size: 18px;
-    font-family: 'Martel Sans', sans-serif;
-}
-#sec_text p:nth-child(3)
-{
-    margin-top: 20px;
-}
-#sec_text h1
-{
-    font-size: 48px;
-    font-family: 'Martel Sans', sans-serif;
-    font-weight: 900;
-}
-div#sec_img
-{
-    position: absolute;
-    width: 100%;
-    right: 0;
     display: flex;
-    justify-content: end;
+    align-items: center;
+    gap: 10px;
 }
-div#sec_img img
-{
-    max-width: 900px;
-    opacity: 30%;
-}
-
-footer
-{
-    position: absolute;
-    right: 0;
-}
-footer div
+.servicos
 {
     display: flex;
     flex-direction: column;
+    width: calc(100% / 3);
+    height: 270px;
+    padding: 10px;
+    
 }
-footer div .bi
+.servicos i
 {
-    padding: 0 10px;
-    font-size: 40px;
-    cursor: pointer;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    color: #5763ac;
 }
-
-@media screen and (max-width: 1300px) {
-    section {
-        width: 1100px;
-    }
+.servicos h2
+{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #2d343e;
 }
-@media screen and (max-width: 1100px) {
-    section {
-        width: 900px;
-    }
+.servicos p
+{
+    color: #2d343e;
+    padding: 0 20px;
+}
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 200px;
+    min-height: 200px;
+    background-color: #2d343e;
+}
+#locais-atendimento
+{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+#locais-atendimento h3
+{
+    margin-bottom: 20px;
+}
+#locais-atendimento h3 i
+{
+    margin-right: 10px;
+    color: rgb(144, 216, 126);
+}
+.text-destaque
+{
+    font-weight: bold;
+}
+ul
+{
+    list-style: circle;
 }
